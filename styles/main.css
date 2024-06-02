@@ -1,49 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 main {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+}
+
+#servicos .title-div h2 {
+    padding-top: 90px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 90px 0 90px;
+    gap: 50px;
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
-main p {
-    line-height: 30px;
-}
-
-.gap-div {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.container{
-    padding: 0 100px 0 100px;
-    display: flex;
-    flex-direction: column;
-}
-
-.flex {
-    display: flex;
-}
-
-section h2{
-    color:  #4169e1;
-    font-size: 2em;
-    margin-bottom: 25px;
-}
-
-section p{
-    font-size: 20px;
+.txt-div p {
+    width: 90%;
+    height: 20vh;
+    font-size: 1.2em;
 }
 
 #home img {
-    width: 200px;
-    height: 200px;
-    margin-left: 500px;
-
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -52,25 +59,20 @@ section p{
     0% {
         top: 0;
     }
-
     100% {
         top: 30px;
     }
 }
 
-#equipe img {
-    width: 200px;
-    height: 200px;
-
-    margin-right: 50px;
+.sobre-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .especialidades-box {
     width: 450px;
     height: 332px;
-
     color: #fff;
     padding: 40px;
     border-radius: 20px;
@@ -93,12 +95,12 @@ section p{
     margin: 15px 0;
 }
 
-.portfolio-div{
+.portfolio-div {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 0px;
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 
 .img-port {
@@ -106,9 +108,9 @@ section p{
     height: 460px;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
-    border-radius: 40px;
+    border-radius: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 .overlay {
@@ -118,7 +120,7 @@ section p{
     width: 100%;
     height: 100%;
     background-color: #000000b8;
-    border-radius: 40px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,14 +131,6 @@ section p{
     transition: .5s;
 }
 
-.overlay:hover {
+.img-port:hover .overlay {
     opacity: 1;
-}
-
-.portfolio-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 100px;
 }

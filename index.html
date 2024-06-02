@@ -7,6 +7,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="styles/responsive.css">
         <link rel="stylesheet" href="/styles/header.css">
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="/styles/footer.css">
@@ -28,113 +29,113 @@
                 </h1>
             </a>
             <nav>
-                <div class="edit-btn">
-                    <a href="#home">
-                        <button>Início</button>
-                    </a>
-                </div>
-                <div class="edit-btn">
-                    <a href="#sobre">
-                        <button>Especialidades</button>
-                    </a>
-                </div>
-                <div class="edit-btn">
-                    <a href="#equipe">
-                        <button>Sobre</button>
-                    </a>
-                </div>
-                <div class="edit-btn">
-                    <a href="#servicos">
-                        <button>Projetos</button>
-                    </a>
-                </div>
+                <button id="hamburger-button" class="hamburger-button" aria-label="Menu Principal" aria-controls="menu" aria-expanded="true">
+                    <span class="icon"></span>
+                </button>
+
+                <ul id="menu" class="menu" aria-hidden="true">
+                    <li>
+                        <a href="#home">Início</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Especialidades</a>
+                    </li>
+                    <li>
+                        <a href="#equipe">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#servicos">Projetos</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
         <main>
-            <div class="gap-div">
-
-                <section id="home">
-                    <div class="container">
-                        <h2>
-                            TRANSFORMANDO SUAS IDEIAS EM REALIDADE.
-                        </h2>
-                        <div class="flex">
-                            <p>
-                                A originalidade e a inovação caminham juntas. Com uma fusão exclusiva de design marcante, usabilidade intuitiva e otimização para resultados excepcionais, estou preparado(a) para construir a presença online dos seus sonhos.
-                            </p>
-                            <div class="img-div">
-                                <img src="/assets/Profile-night.png" alt="Imagem de joão vitor." title="João Vitor" />
-                            </div>
-                        </div>
+            <section id="home">
+                <div class="title-div">
+                    <h2>
+                        TRANSFORMANDO SUAS IDEIAS EM REALIDADE.
+                    </h2>
+                </div>
+                 <div class="container">
+                    <div class="txt-div">
+                        <p>
+                            A originalidade e a inovação caminham juntas. Com uma fusão exclusiva de design marcante, usabilidade intuitiva e otimização para resultados excepcionais, estou preparado para construir a presença online dos seus sonhos.
+                        </p>
                     </div>
-                </section>
+                    <div class="img-div">
+                            <img src="/assets/Profile-night.png" alt="Imagem de joão vitor." title="João Vitor" />
+                    </div>
+                </div>
+            </section>
 
-                <section id="sobre">
-                    <div class="container">
-                        <h2>
-                            MINHAS ESPECIALIDADES.
-                        </h2>
-                        <div class="flex">
-                            <div class="especialidades-box">
-                                <div class="icon-div">
-                                    <i class="fa-solid fa-code"></i>
-                                </div>
+            <section id="sobre">
+                <div class="title-div">
+                    <h2>
+                        MINHAS ESPECIALIDADES.
+                    </h2>
+                </div>
+                <div class="container">
+                    <div class="sobre-div">
+                        <div class="especialidades-box">
+                                <i class="fa-solid fa-code"></i>
                                 <h3>Blog</h3>
                                 <p>Divida suas ideias e pensamentos com outras pessoas em qualquer lugar que você esteja. </p>
-                            </div><!--especialidades-box-->
-                            <div class="especialidades-box">
-                                <i class="fa-solid fa-code"></i>
-                                <h3>Landing</h3>
-                                <p>Criamos sua vitrine web, convertando visitantes em futuros clientes para seus produtos ou ofertas.</p>
-                            </div><!--especialidades-box-->
-                            
-                            <div class="especialidades-box">
-                                <i class="fa-solid fa-code"></i>
-                                <h3>Website</h3>
-                                <p>Expanda seu negócio com um web site mostrando todos seus produtos e todas as informações sobre eles.</p>
-                            </div><!--especialidades-box-->
-                        </div>
-                    </div>
-                </section>
+                        </div><!--especialidades-box-->
 
-                <section id="equipe">
-                    <div class="container">
-                        <h2>
-                            OLÁ, SOU JOÃO VITOR.
-                        </h2>
-                        <div class="flex">
-                            <div class="img-div">
-                                <img src="/assets/Profile-night.png" alt="Imagem de joão vitor." title="João Vitor" />
-                            </div>
-                            <p>
-                                Sou formado em Análise e Desenvolvimento de Sistemas e tenho 22 anos. Desde pequeno, sou fascinado por tecnologia e como ela pode transformar o mundo. Durante a faculdade, aprendi a criar aplicativos e implementar sistemas complexos, adquirindo uma base sólida em programação, banco de dados e desenvolvimento web. Agora, como profissional, busco aplicar meus conhecimentos e continuar aprendendo. Além da tecnologia, gosto de explorar novas culturas, viajando ou aprendendo idiomas. Acredito que, com dedicação e paixão, posso contribuir significativamente para o mundo da tecnologia.
-                            </p>
-                        </div>
+                        <div class="especialidades-box">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Landing</h3>
+                            <p>Criamos sua vitrine web, convertando visitantes em futuros clientes para seus produtos ou ofertas.</p>
+                        </div><!--especialidades-box-->
+                                
+                        <div class="especialidades-box">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Website</h3>
+                            <p>Expanda seu negócio com um web site mostrando todos seus produtos e todas as informações sobre eles.</p>
+                        </div><!--especialidades-box-->
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section id="servicos">
-                    <div class="container">
-                        <h2>
-                            MEU PORTFÓLIO.
-                        </h2>
-                        <div class="flex">
-                            <div class="portfolio-div">
-                                <div class="img-port" style="background-image: url(assets/tela-conversor.png);">
-                                    <div class="overlay">Projeto 1</div>
-                                </div>
-                                <div class="img-port" style="background-image: url(assets/tela-login.png);">
-                                    <div class="overlay">Projeto 2</div>
-                                </div>
-                                <div class="img-port" style="background-image: url(assets/tela-link.png);">
-                                    <div class="overlay">Projeto 3</div>
-                                </div>
-                            </div>
+            <section id="equipe">
+                <div class="title-div">
+                    <h2>
+                        OLÁ, SOU JOÃO VITOR.
+                    </h2>
+                </div>
+                <div class="container">
+                    <div class="img-div">
+                        <img src="/assets/Profile-night.png" alt="Imagem de joão vitor." title="João Vitor" />
+                    </div>
+                    <div class="txt-div">
+                        <p>
+                            Sou formado em Análise e Desenvolvimento de Sistemas e tenho 22 anos. Desde pequeno, sou fascinado por tecnologia e como ela pode transformar o mundo. Durante a faculdade, aprendi a criar aplicativos e implementar sistemas complexos, adquirindo uma base sólida em programação, banco de dados e desenvolvimento web. Agora, como profissional, busco aplicar meus conhecimentos e continuar aprendendo. Além da tecnologia, gosto de explorar novas culturas, viajando ou aprendendo idiomas. Acredito que, com dedicação e paixão, posso contribuir significativamente para o mundo da tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="servicos">
+                <div class="title-div">
+                    <h2>
+                        MEU PORTFÓLIO.
+                    </h2>
+                </div>
+                <div class="container">
+                    <div class="portfolio-div">
+                        <div class="img-port" style="background-image: url(assets/tela-conversor.png);">
+                            <div class="overlay">Projeto 1</div>
+                        </div>
+                        <div class="img-port" style="background-image: url(assets/tela-login.png);">
+                            <div class="overlay">Projeto 2</div>
+                        </div>
+                        <div class="img-port" style="background-image: url(assets/tela-link.png);">
+                            <div class="overlay">Projeto 3</div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
         <footer>
                 &copy; Todos os direitos reservados.
@@ -147,5 +148,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="menu.js"></script>
     </body>
 </html>

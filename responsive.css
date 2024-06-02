@@ -1,0 +1,33 @@
+@media (max-width: 700px) {
+    header a h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex .img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex p {
+        font-size: 18px;
+    }
+
+    .portfolio-div {
+        display: flex;
+        flex-direction: column;
+    }
+}
